@@ -1,10 +1,10 @@
 import { RiReactjsLine } from "react-icons/ri"
-import { TbBrandNextjs } from "react-icons/tb"
 import { SiMongodb } from "react-icons/si"
-import { DiRedis } from "react-icons/di"
-import { FaNodeJs } from "react-icons/fa"
+import { SiTerraform } from "react-icons/si";
+import { SiKubernetes } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi"
-import { invariant, motion, transform } from "framer-motion"
+import { SiDocker } from "react-icons/si";
+import { motion} from "framer-motion"
 
 const iconVariants = (duration) => ({
     initial: {y: -10},
@@ -21,6 +21,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
+    <section id = "tech">
     <div className='border-b border-neutral-800 pb-24'>
         <motion.h2 
             whileInView={{opacity: 1, y: 0}}
@@ -44,7 +45,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <TbBrandNextjs className="text-7xl"/>
+                <SiDocker  className="text-7xl text-blue-600"/>
             </motion.div>
             <motion.div 
                 variants={iconVariants(5)}
@@ -58,14 +59,14 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <DiRedis className="text-7xl text-red-700"/>
+                <SiTerraform className="text-7xl text-purple-500"/>
             </motion.div>
             <motion.div 
                 variants={iconVariants(6)}
                 initial="initial"
                 animate="animate"
                 className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <FaNodeJs className="text-7xl text-green-500"/>
+                <SiKubernetes className="text-7xl text-blue-800"/>
             </motion.div>
             <motion.div 
                 variants={iconVariants(4)}
@@ -76,6 +77,7 @@ const Technologies = () => {
             </motion.div>
         </motion.div>
     </div>
+    </section>
   )
 }
 

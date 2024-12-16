@@ -5,6 +5,8 @@ import About from './components/About'
 import Technologies from './components/Technologies'
 import Experience from './components/Experience'
 import Project from './components/Project'
+import Achievement from './components/Achievements'
+import Goal from './components/Goals'
 import Contact from './components/Contact'
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
         <Technologies/>
         <Experience/>
         <Project/>
+        <Achievement/>
+        <Goal/>
         <Contact/>
       </div>
     </div>
