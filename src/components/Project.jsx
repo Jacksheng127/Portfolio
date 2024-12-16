@@ -34,8 +34,8 @@ const Project = () => {
                 ) : (
                   <img 
                     src={project.image} 
-                    width={150} 
-                    height={150} 
+                    width={200} 
+                    height={200} 
                     alt={project.title} 
                     className='mb-6 rounded-md'/>
                 )}
@@ -45,7 +45,11 @@ const Project = () => {
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1 }}
                 className='w-full max-w-xl lg:w-3/4'>
-                <h6 className='mb-2 font-semibold'>{project.title}</h6>
+                <h6 className='mb-2 font-semibold'>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    {project.title}
+                  </a>
+                </h6>
                 <p className='mb-4 text-neutral-400'>{project.description}</p>
                 {project.technologies.map((tech, index) => (
                   <span key={index} className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800'>{tech}</span>

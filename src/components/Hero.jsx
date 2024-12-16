@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/JackProfile2.png";
 import { motion, AnimatePresence } from "framer-motion";
 import resume from "../assets/resume_cv.pdf";
 import { useState, useEffect } from "react";

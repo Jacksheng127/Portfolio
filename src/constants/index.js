@@ -1,16 +1,23 @@
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
 import ACACert from "../assets/achievements/ACACert.png";
 import UMH2024 from "../assets/achievements/umh2024.jpg";
 import KitaHack2023 from "../assets/achievements/kitahack_2023.jpg";
 import UMH2023 from "../assets/achievements/umh2023.jpg";
 import Vitrox from "../assets/experience/vitrox.png";
 import ytlDigitalBank from "../assets/experience/ytlDB.png";
+import chatbot from "../assets/projects/chatbot.jpg";
+import pregnancyApp from "../assets/projects/pregancy.png";
+import financialApp from "../assets/projects/financian.png";
+import kingdom from "../assets/projects/3king.jpeg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate tech enthusiast with a strong aptitude for crafting robust and scalable solutions. My expertise spans a wide range of front-end technologies and back-end frameworks. Additionally, I am proficient in working with databases including SQL and NoSQL.
+                            Beyond software development, I have gained some experience in cloud computing platforms, such as Alibaba Cloud, Microsoft Azure, and AWS, enabling me to build and deploy efficient cloud-based solutions.
+                            My ultimate goal is to leverage this diverse skill set to create innovative, impactful solutions that drive business growth while delivering exceptional user experiences.
+                            Throughout my journey, I have worked on several exciting projects, including a Database Chatbot for Inventory Tracking and a Financial Management App, showcasing my ability to solve complex problems through technology.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a passionate tech enthusiast who loves crafting robust and scalable solutions using various tools, platforms, and frameworks. My journey in the tech world began with an innate curiosity about how systems work, which has evolved into a fulfilling career in which I constantly seek opportunities to learn and tackle new challenges.
+                          During my professional journey, I worked as a Data Engineer Intern at YTL Digital Bank, where I developed and maintained data pipelines using Apache Airflow, Python, and Helm Chart. This role helped me strengthen my ability to process and manage large-scale data systems effectively.
+                          Additionally, I served as a Software Engineer Intern at ViTrox Corporation Berhad, where I contributed to the development of X-ray system features using Java and C++. These experiences not only enhanced my technical capabilities but also honed my problem-solving skills and adaptability.
+                          I thrive in collaborative environments where I can contribute to solving complex problems while delivering high-quality solutions. Beyond coding, I enjoy staying active, exploring emerging technologies, and contributing to open-source projects that align with my interests. My commitment to continuous learning drives me to push boundaries and excel in my field.`;
 
 export const EXPERIENCES = [
   {
@@ -45,36 +52,40 @@ export const PROJECTS = [
     description:
       "Create a mobile application that help to monitor water usage and provide alerts for water wastage, also provide tips to save water.",
     technologies: ["FLutter", "Dart", "Firebase", "IOT"],
-    video: "https://www.youtube.com/embed/AbaEc1z9oxY?si=mfJDYYoNGwNDYqSx"
+    video: "https://www.youtube.com/embed/AbaEc1z9oxY?si=mfJDYYoNGwNDYqSx",
+    link: "https://github.com/Jacksheng127/Water-Conservation-App"
   },
   {
     title: "Database Chatbot for Inventory Tracking",
-    image: project2,
+    image: chatbot,
     description:
       "Utilized LLM (Large Language Model) integration with a vector database for conducting similarity searches, enabling real-time tracking of inventory stocks with features for adding and updating basic stock information, and facilitating inventory inquiries through chatbot interaction.",
     technologies: ["React", "Firestore", "Django", "Pinecone", "Gemini", "PaLM"],
+    link: "https://github.com/AsynchronousNotAvailable/Kitahack2024"
   },
   {
     title: "Pregnancy Care App",
-    image: project3,
+    image: pregnancyApp,
     description:
       "Develop a Pregnancy Care App that provides basic information about the formation of a fetus, together with recommendations of the meals and nutrients required by pregnant women and track the pregnant women's pregnancy cycle.",
     technologies: ["Flutter", "Dart", "Python", "Flask", "Machine Learning"],
+    link: "https://github.com/yiwan-21/umh23-pregnancy"
   },
   {
     title: "Three Kingdom: Red-Cliff Battle",
-    image: project4,
+    image: kingdom,
     description:
       "A web gamification-based application. This game simulates the scenarios in Three Kingdoms: Red-Cliff Battle where the user will act as Sun Quan’s loyal minister to help Sun Quan to beat Cao Cao. Includes game features such as Forming Wu Kingdom’s Hierarchy, Borrowing Arrows with Straw Boats, Enemy Fortress Attack Simulation, Red Cliff on Fire, and  Engaging Cao Cao at Hua Rong Road. ",
     technologies: ["Java", "React", "Spring Boot"],
+    link: "https://github.com/leechenwei/Three-Kingdom-Hosting"
   },
   {
     title: "Financial Management App",
-    image: project4,
+    image: financialApp,
     description:
       "Financial management app with investment insights, a reward system, data visualization and budgeting.",
     technologies: ["React Native", "ExpressJs", "Firebase"],
-    video: "vhack"
+    link: "https://github.com/SJWONG27/FinFreedom"
   },
 ];
 
