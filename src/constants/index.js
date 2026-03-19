@@ -14,10 +14,10 @@ import UMH2025 from "../assets/achievements/UMH2025.png";
 import financialApp from "../assets/projects/financian.png";
 import kingdom from "../assets/projects/3king.jpeg";
 
-export const HERO_CONTENT = `I am a passionate tech enthusiast with a strong aptitude for crafting robust and scalable solutions. My expertise spans a wide range of front-end technologies and back-end frameworks. Additionally, I am proficient in working with databases including SQL and NoSQL.
-                            Beyond software development, I have gained some experience in cloud computing platforms, such as Alibaba Cloud, Microsoft Azure, and AWS, enabling me to build and deploy efficient cloud-based solutions.
-                            My ultimate goal is to leverage this diverse skill set to create innovative, impactful solutions that drive business growth while delivering exceptional user experiences.
-                            Throughout my journey, I have worked on several exciting projects, including a Database Chatbot for Inventory Tracking and a Financial Management App, showcasing my ability to solve complex problems through technology.`;
+export const HERO_CONTENT = `I am an engineering-driven software engineer focused on building scalable data platforms, reliable backend systems, and cloud-native infrastructure. 
+                              My work sits at the intersection of Data Engineering, Backend Development, and AI systems, where I design and deliver production-ready solutions that are robust, observable, and efficient. I have hands-on experience developing high-performance APIs, distributed data pipelines, and resilient systems using modern cloud and DevOps practices.
+                              I enjoy solving real-world problems through clean system design, automation, and strong engineering fundamentals—whether it’s optimizing data workflows, improving system reliability, or integrating AI/LLM capabilities into practical applications.
+                              Driven by curiosity and continuous learning, I aim to build impactful systems that scale, perform, and create meaningful value in real-world environments.`;
 
 export const ABOUT_TEXT = `I am a passionate tech enthusiast who loves crafting robust and scalable solutions using various tools, platforms, and frameworks. My journey in the tech world began with an innate curiosity about how systems work, which has evolved into a fulfilling career in which I constantly seek opportunities to learn and tackle new challenges.
                           During my professional journey, I worked as a Data Engineer Intern at YTL Digital Bank, where I developed and maintained data pipelines using Apache Airflow, Python, and Helm Chart. This role helped me strengthen my ability to process and manage large-scale data systems effectively.
