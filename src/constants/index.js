@@ -4,8 +4,13 @@ import KitaHack2023 from "../assets/achievements/kitahack_2023.jpg";
 import UMH2023 from "../assets/achievements/umh2023.jpg";
 import Vitrox from "../assets/experience/vitrox.png";
 import ytlDigitalBank from "../assets/experience/ytlDB.png";
+import grab from "../assets/experience/grab.png";
 import chatbot from "../assets/projects/chatbot.jpg";
 import pregnancyApp from "../assets/projects/pregancy.png";
+import medimate from "../assets/projects/medimate.png";
+import amanahBlock from "../assets/projects/amanahBlock.png";
+import KitaHack2025 from "../assets/achievements/KitaHack2025.png";
+import UMH2025 from "../assets/achievements/UMH2025.png";
 import financialApp from "../assets/projects/financian.png";
 import kingdom from "../assets/projects/3king.jpeg";
 
@@ -21,40 +26,43 @@ export const ABOUT_TEXT = `I am a passionate tech enthusiast who loves crafting 
 
 export const EXPERIENCES = [
   {
+    year: "July 2025 - January 2025",
+    image: grab,
+    role: "Data Engineer Intern",
+    company: "Grab",
+    description: `1. Improved API performance and reliability by standardizing timestamp formatting across query engines and designing a simplified GetMetricSimpleV2 API to reduce query engine dependency.
+    2. Refactored core metric services by splitting the monolithic QueryMetric API into GetMetricQuery and GetMetricValue, and enhancing the Metric Availability API with derived metrics support and a new latest-timestamp feature.
+    3. Enhanced SDK and query capabilities by adding support for one-sided filter expressions and improving filter DSL toString() output for better debugging and usability.
+    4. Contributed to AI/LLM tooling and automation through prompt engineering for metric documentation, evaluation using Langsmith, and developing a new Forecast Tool for the MCP ecosystem.
+    5. Implementing Hystrix circuit breakers to strengthen system resilience and scalability by introducing safeguards at critical execution points to prevent database overload during high-traffic scenarios`,
+    technologies: ["Python",  "Golang", "AWS", "Hystrix-Go", "Datadog", "Langsmith."],
+  },
+  {
     year: "July 2024 - October 2024",
     image: ytlDigitalBank,
     role: "Data Engineer Intern",
     company: "YTL Digital Bank",
-    description: `Develop and maintain data pipelines using Apache Airflow, Python, and Helm Chart.
-    Implement CI/CD pipelines for automated deployment of data pipelines.
-    Design and develop data models and ETL processes using PostgreSQL, Apache Spark, and DBT.
-    Deploy and manage data infrastructure on Alibaba Cloud using Docker, Kubernetes, and Terraform.`,
-    technologies: ["Python", "Apache Airflow", "Helm Chart", "CI/CD", "Docker", "Kubernetes", "PostgreSQL", "Apache Spark", "Alibaba Cloud", "Extract, Transform, Load (ETL)", "DBT", "Terraform"],
+    description: `1. Develop and maintain data pipelines using Apache Airflow, Python, and Helm Chart.
+    2. Implement CI/CD pipelines for automated deployment of data pipelines.
+    3. Design and develop data models and ELT processes using PostgreSQL, Apache Spark, and DBT.
+    4. Deploy and manage data infrastructure on Alibaba Cloud using Docker, Kubernetes, and Terraform.`,
+    technologies: ["Python", "Apache Airflow", "Helm Chart", "CI/CD", "Docker", "Kubernetes", "PostgreSQL", "Apache Spark", "Alibaba Cloud", "Power Automate", "Microsoft Azure", "Extract, Load, Transform (ELT)", "DBT", "Terraform"],
   },
   {
     year: "July 2023 - October 2023",
     image: Vitrox,
     role: "Software Engineer Intern",
     company: "ViTrox Corporation Berhad",
-    description: `Unit testing by using JUnit and Google Test frameworks.
-    Develop X-ray system features using Java and C++.
-    Apply software architecture principles, focusing on designing system flows, and implementing necessary functions and classes.
-    Use localization.properties files to support multiple languages within the software application.
-    Implement and utilize Gradle scripts to run unit tests written in C++ and generate results in HTML format.
-    Design and develop the frontend interface for the machine using JavaFX.`,
+    description: `1. Unit testing by using JUnit and Google Test frameworks.
+    2. Develop X-ray system features using Java and C++.
+    3. Use localization.properties files to support multiple languages within the software application.
+    4. Implement and utilize Gradle scripts to run unit tests written in C++ and generate results in HTML format.
+    5. Design and develop the frontend interface for the machine using JavaFX.`,
     technologies: ["Java", "C++", "Git", "Gradle", "JavaFX"],
   },
 ];
 
 export const PROJECTS = [
-  {
-    title: "Water Conservation App",
-    description:
-      "Create a mobile application that help to monitor water usage and provide alerts for water wastage, also provide tips to save water.",
-    technologies: ["FLutter", "Dart", "Firebase", "IOT"],
-    video: "https://www.youtube.com/embed/AbaEc1z9oxY?si=mfJDYYoNGwNDYqSx",
-    link: "https://github.com/Jacksheng127/Water-Conservation-App"
-  },
   {
     title: "Database Chatbot for Inventory Tracking",
     image: chatbot,
@@ -64,6 +72,22 @@ export const PROJECTS = [
     link: "https://github.com/AsynchronousNotAvailable/Kitahack2024"
   },
   {
+    title: 'Medimate, AI-Powered Healthcare Assistant',
+    image: medimate,
+    description: 
+      "MediMate is an AI-powered healthcare assistant that enhances medication adherence, chronic disease management, and mental well-being. Key features include a voice-activated glucose checker, 24/7 Conversational AI, AI Health Transcriber, and Smart MedScan for instant medication registration via image capture. It also supports financial aid automation, integrates with wearables for real-time monitoring, and uses gamification to boost user engagement.",
+    technologies: ["React Native", "Expo Go", "Python", "Firebase", "Gemini AI", "Google STT", "ElevenLabs", "Google Vision API", "Google Fit API", "Google Maps API"],
+    link: "https://github.com/szeyu/Medimate-v3"
+  },
+  {
+    title: "AmanahBlock, Blockchain-Powered for Charity Organizations",
+    image: amanahBlock,
+    description: 
+    "AmanahBlock is a decentralized platform that combines blockchain technology, AI, and Shariah-compliant financial practices to transform the charitable giving ecosystem. Designed for transparency, inclusiveness, and impact, AmanahBlock addresses major inefficiencies and trust issues prevalent in traditional donation systems.",
+    technologies: ["React", "Metamask", "Privy integration", "OpenAI", "Gemini", "BigChainDB", "IPFS (Pinata)", "Solidity on Ethereum", "OpenStreetMap API", "HAQQ & Firoza Finance"],
+    link: "https://github.com/szeyu/AmanahBlock"
+  },
+  {
     title: "Pregnancy Care App",
     image: pregnancyApp,
     description:
@@ -71,22 +95,7 @@ export const PROJECTS = [
     technologies: ["Flutter", "Dart", "Python", "Flask", "Machine Learning"],
     link: "https://github.com/yiwan-21/umh23-pregnancy"
   },
-  {
-    title: "Three Kingdom: Red-Cliff Battle",
-    image: kingdom,
-    description:
-      "A web gamification-based application. This game simulates the scenarios in Three Kingdoms: Red-Cliff Battle where the user will act as Sun Quan’s loyal minister to help Sun Quan to beat Cao Cao. Includes game features such as Forming Wu Kingdom’s Hierarchy, Borrowing Arrows with Straw Boats, Enemy Fortress Attack Simulation, Red Cliff on Fire, and  Engaging Cao Cao at Hua Rong Road. ",
-    technologies: ["Java", "React", "Spring Boot"],
-    link: "https://github.com/leechenwei/Three-Kingdom-Hosting"
-  },
-  {
-    title: "Financial Management App",
-    image: financialApp,
-    description:
-      "Financial management app with investment insights, a reward system, data visualization and budgeting.",
-    technologies: ["React Native", "ExpressJs", "Firebase"],
-    link: "https://github.com/SJWONG27/FinFreedom"
-  },
+  
 ];
 
 export const ACHEIVEMENTS = [
@@ -95,28 +104,24 @@ export const ACHEIVEMENTS = [
     image: ACACert,
     description:
       "Certification in cloud computing fundamentals, covering topics like cloud architecture, security, and deployment.",
-    technologies: ["Cloud Computing", "Alibaba Cloud"],
   },
   {
     title: "UM Hackathon 2024 Director",
     image: UMH2024,
     description:
       "Conducted a National hackathon event with over 200 participants from more then 15 universities across Malaysia, focusing on developing innovative solutions for real-world problems with the implementation of machine learning and data science.",
-    technologies: ["Leadership", "Hackathon", "Machine Learning", "Data Science"],
   },
   {
-    title: "KitaHack 2023",
-    image: KitaHack2023,
+    title: "KitaHack 2025 1st Runner-Up",
+    image: KitaHack2025,
     description:
-      "Create a mobile application that help to monitor water usage and provide alerts for water wastage, also provide tips to save water.",
-    technologies: ["Flutter", "Firebase", "IOT"],
+      "Created a Mobile App called MediMate is an AI-powered healthcare assistant that improves medication adherence, chronic disease management, and mental wellness through conversational AI, voice-enabled monitoring, smart medication scanning, wearable integration, and automated health support workflows.",
   },
   {
-    title: "UM Hackathon 2023 2nd Runner-Up",
-    image: UMH2023,
+    title: "UM Hackathon 2025 1st Runner-Up",
+    image: UMH2025,
     description:
-      "Create a mobile application that help preganant woman to monitor their health and baby health.",
-    technologies: ["Flutter", "SQLite", "Machine Learning", "Flask", "Python"],
+      "Create an Application calledAmanahBlock is a decentralized charity platform that leverages blockchain, AI, and Shariah-compliant finance principles to enable transparent, secure, and trustworthy charitable giving",
   },
 ];
 

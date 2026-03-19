@@ -1,9 +1,13 @@
-import { RiReactjsLine } from "react-icons/ri"
-import { SiMongodb } from "react-icons/si"
+import { SiApacheairflow } from "react-icons/si"
 import { SiTerraform } from "react-icons/si";
 import { SiKubernetes } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi"
 import { SiDocker } from "react-icons/si";
+import { SiGoland } from "react-icons/si";
+import { SiAmazonaws } from "react-icons/si";
+import { SiDatadog } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import { SiDbt } from "react-icons/si";
 import { motion} from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -38,7 +42,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <RiReactjsLine className="text-7xl text-cyan-400"/>
+                <SiApacheairflow className="text-7xl text-cyan-400"/>
             </motion.div>
             <motion.div 
                 variants={iconVariants(3)}
@@ -46,13 +50,6 @@ const Technologies = () => {
                 animate="animate"
                 className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <SiDocker  className="text-7xl text-blue-600"/>
-            </motion.div>
-            <motion.div 
-                variants={iconVariants(5)}
-                initial="initial"
-                animate="animate"
-                className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiMongodb className="text-7xl text-green-500"/>
             </motion.div>
             <motion.div 
                 variants={iconVariants(2)}
@@ -74,6 +71,41 @@ const Technologies = () => {
                 animate="animate"
                 className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <BiLogoPostgresql className="text-7xl text-sky-700"/>
+            </motion.div>
+            <motion.div 
+                variants={iconVariants(4)}
+                initial="initial"
+                animate="animate"
+                className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiGoland className="text-7xl text-blue-500"/>
+            </motion.div>
+            <motion.div 
+                variants={iconVariants(3)}
+                initial="initial"
+                animate="animate"
+                className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiAmazonaws className="text-7xl text-orange-500"/>
+            </motion.div>
+            <motion.div 
+                variants={iconVariants(5)}
+                initial="initial"
+                animate="animate"
+                className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiDatadog className="text-7xl text-purple-600"/>
+            </motion.div>
+            <motion.div 
+                variants={iconVariants(4)}
+                initial="initial"
+                animate="animate"
+                className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiPython className="text-7xl text-green-500"/>
+            </motion.div>
+            <motion.div 
+                variants={iconVariants(3)}
+                initial="initial"
+                animate="animate"
+                className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiDbt className="text-7xl text-orange-600"/>
             </motion.div>
         </motion.div>
     </div>
