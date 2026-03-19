@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import logo from "../assets/JackLogo.png"
+// import logo from "../assets/JackLogo.png"
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -32,15 +32,15 @@ export const Navbar = () => {
   return (
       <nav id="navbar" className={`fixed top-0 left-4 w-full transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"} mb-20 flex items-center justify-between bg-opacity-70 backdrop-blur-md shadow-md z-50`}>
         <div className="flex flex-shrink-0 items-center">
-            <img className="mx-2 w-16 mt-2" src={logo} alt="logo" />
+            {/* <img className="mx-2 w-16 mt-2" src={logo} alt="logo" /> */}
         </div>
         <div className="m-8 flex items-center justify-center gap-8 text-xl">
         <a href="#home" className="hover:text-blue-500">
           Home
         </a>
-        <a href="#about" className="hover:text-blue-500">
+        {/* <a href="#about" className="hover:text-blue-500">
           About Me
-        </a>
+        </a> */}
         <a href="#tech" className="hover:text-blue-500">
           Tech
         </a>

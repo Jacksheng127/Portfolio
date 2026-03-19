@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/JackProfile2.png";
 import { motion, AnimatePresence } from "framer-motion";
-import resume from "../assets/resume_cv.pdf";
+import resume from "../assets/resume2025.pdf";
 import { useState, useEffect } from "react";
 
 const container = (delay) => ({
@@ -10,7 +10,7 @@ const container = (delay) => ({
 });
 
 const AnimatedTitle = () => {
-  const words = ["Student", "Developer"];
+  const words = ["Software Engineer", "Data Engineer", "Tech Enthusiast"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const Hero = () => {
                 variants={container(0)}
                 initial="hidden"
                 animate="visible"
-                className="pb-14 text-4xl font-thin tracking-tight lg:mt-14 lg:text-6xl"
+                className="pb-14 text-4xl font-normal tracking-tight lg:mt-14 lg:text-6xl"
               >
                 LIM JACK SHENG
               </motion.h1>
@@ -75,7 +75,7 @@ const Hero = () => {
               >
                 <a
                   href={resume}
-                  download="resume.pdf"
+                  download="Lim Jack Sheng Resume 2025.pdf"
                   className="mt-4 inline-block rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
                 >
                   DOWNLOAD RESUME
